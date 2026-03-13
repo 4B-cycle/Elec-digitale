@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
 
     <link rel="icon" type="image/x-icon" href="./icons/site-icon.svg">
     <title>Projet Elec-digitale</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Datatype&display=swap" rel="stylesheet">
 
   </head>
 
@@ -28,13 +34,15 @@
     <div id="info">
 
       <div class="part"id="interieur">
-        <p>Temperature de interieur...<br>
-        Humidite de interieur...</p>
+        <h4>Interieur</h4>
+        <p><span>Temperature: 15,55°C</span><span class="data">{l:10,20,15,30,35,40,20,25,50}</span></p>
+        <p><span></span>Humidite: 60%</span><span class="data">{l:50,70,71,60,70,56,81,100,20}</span></p>
       </div>
 
       <div class="part"id="exterieur">
-        <p>Temperature de exterieur...<br>
-        Humidite de exterieur...</p>
+        <h4>Exterieur</h4>
+        <p><span>Temperature: 10,10°C</span><span class="data">{l:10,3,11,2,2,2,3,4,8}</span></p>
+        <p><span></span>Humidite: 40%</span><span class="data">{l:100,0,100,0,50,100,0,50,0,50,100}</span></p>
       </div>
 
     </div>

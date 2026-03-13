@@ -14,7 +14,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Datatype&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Datatype:wdth,wght@50..150,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
   </head>
 
@@ -24,25 +24,25 @@
     <p>Groupe 9</p>
 
     <div id="panel">
-      <button id="button1">Button 1</button>
-      <button id="button2">Button 2</button>
-      <button id="button3">Button 3</button>
-      <button id="button4">Button 4</button>
-      <button id="button5">Button 5</button>
+      <img width="48" height="48" src="./icons/reset-history.svg" alt="Effacer l'historique" style="cursor: pointer;" onclick="ResetHistory()">
+      <img width="48" height="48" src="./icons/database.svg" alt="Acceder a la base de donnee" style="cursor: pointer;" onclick="AffDB()">
+      <img width="48" height="48" src="./icons/bar-chart.svg" alt="Bar Chart Style" style="cursor: pointer;" onclick="GraphStyle(1)">
+      <img width="48" height="48" src="./icons/PCB-view.svg" alt="Voir le PCB" style="cursor: pointer;" onclick="AffPCB()">
+      <img width="48" height="48" src="./icons/led-test.svg" alt="Tester les LEDs" style="cursor: pointer;" onclick="TestLEDs()">
     </div>
 
     <div id="info">
 
       <div class="droite part"id="interieur">
         <h4>Interieur</h4>
-        <p><span class="gauche">Temperature: 15,55°C</span><span class="droite data">{l:10,20,15,30,35,40,20,25,50}</span></p>
-        <p><span class="gauche">Humidite: 60%</span><span class="droite data">{l:50,70,71,60,70,56,81,100,20}</span></p>
+        <p class="guche-droite"><span class="gauche">Temperature: <span class="data selectable">15,55°C</span></span><span class="droite data">{l:10,20,15,30,35,40,20,25,50}</span></p>
+        <p class="gauche-droite"><span class="gauche">Humidite: <span class="data selectable">60%</span></span><span class="droite data">{l:50,70,71,60,70,56,81,100,20}</span></p>
       </div>
 
       <div class="droite part"id="exterieur">
         <h4>Exterieur</h4>
-        <p><span class="gauche">Temperature: 10,10°C</span><span class="droite data">{l:10,3,11,2,2,2,3,4,8}</span></p>
-        <p><span class="gauche">Humidite: 40%</span><span class="droite data">{l:100,0,100,0,50,100,0,50,0,50,100}</span></p>
+        <p class="gauche-droite"><span class="gauche">Temperature: 10,10°C</span><span class="droite data">{l:10,3,11,2,2,2,3,4,8}</span></p>
+        <p class="gauche-droite"><span class="gauche">Humidite: 40%</span><span class="droite data">{l:100,0,100,0,50,100,0,50,0,50,100}</span></p>
       </div>
 
     </div>

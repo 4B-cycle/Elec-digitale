@@ -1,19 +1,33 @@
 /*body{background-color:red;}test de connectivite css a html✅*/
 
-.data{
-  font-family: "Datatype", monospace;
+p{
+  font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 
-.data,.no-select{
+.data{
+  font-family: "Datatype", monospace !important;
+  font-optical-sizing: auto !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-variation-settings: "wdth" 100 !important;
+}
+
+*{
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
   }
+
+.selectable{
+    user-select: text !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+}
 
 .info{
     height: 164px;
@@ -24,7 +38,7 @@
 }
 
 .part{
-    background-color: powderblue;
+    background-color: #1B1B1B;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -48,4 +62,9 @@
 .centre{
     margin-left: auto;
     margin-right: auto;
+}
+
+body {
+    background-color: #131314;
+    color: #c4c7c5;
 }

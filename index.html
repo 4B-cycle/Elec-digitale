@@ -20,29 +20,32 @@
 
 
   <body>
-    <h1>Projet Elec-digitale</h1>
-    <p>Groupe 9</p>
+    <h4 id="groupe-projet">Projet Elec-digitale - Groupe 9</h4>
 
     <div id="panel">
-      <img width="48" height="48" src="./icons/reset-history.svg" alt="Effacer l'historique" style="cursor: pointer;" onclick="ResetHistory()">
-      <img width="48" height="48" src="./icons/database.svg" alt="Acceder a la base de donnee" style="cursor: pointer;" onclick="AffDB()">
-      <img width="48" height="48" src="./icons/bar-chart.svg" alt="Bar Chart Style" style="cursor: pointer;" onclick="GraphStyle(1)">
-      <img width="48" height="48" src="./icons/PCB-view.svg" alt="Voir le PCB" style="cursor: pointer;" onclick="AffPCB()">
-      <img width="48" height="48" src="./icons/led-test.svg" alt="Tester les LEDs" style="cursor: pointer;" onclick="TestLEDs()">
+      <img class="btn" width="48" height="48" src="./icons/reset-history.svg" alt="Effacer l'historique" style="cursor: pointer;" onclick="ResetHistory()">
+      <img class="btn" width="48" height="48" src="./icons/database.svg" alt="Acceder a la base de donnee" style="cursor: pointer;" onclick="AffDB()">
+      <img class="btn" width="48" height="48" src="./icons/bar-chart.svg" alt="Bar Chart Style" style="cursor: pointer;" onclick="GraphStyle(1)">
+      <img class="btn" width="48" height="48" src="./icons/PCB-view.svg" alt="Voir le PCB" style="cursor: pointer;" onclick="AffPCB()">
+      <img class="btn" width="48" height="48" src="./icons/led-test.svg" alt="Tester les LEDs" style="cursor: pointer;" onclick="TestLEDs()">
     </div>
 
     <div id="info">
 
       <div class="droite part"id="interieur">
-        <h4>Interieur</h4>
-        <p class="guche-droite"><span class="gauche">Temperature: <span class="data selectable">15,55°C</span></span><span class="droite data">{l:10,20,15,30,35,40,20,25,50}</span></p>
-        <p class="gauche-droite"><span class="gauche">Humidite: <span class="data selectable">60%</span></span><span class="droite data">{l:50,70,71,60,70,56,81,100,20}</span></p>
+        <table>
+          <tr><td><h4>Interieur</h4></td></tr>
+          <tr><td>Temperature:</td><td><span class="data selectable">15,55°C</span></td><td class="indicators"><img src="./icons/too-hot.svg" alt="Temperature" width="24" height="24"></td><td class="data">{l:10,20,15,30,35,40,20,25,50,80,30,20,10,15,5}<span class="empty">:::::::::::::::</span></td></tr>
+          <tr><td>Humidite:</td><td><span class="data selectable">60%</span></td><td class="indicators"><img src="./icons/humidity-high.svg" alt="Humidite" width="24" height="24"></td><td class="data">{l:50,70,71,60,70,56,81,100,20,3,10,5,23,20,10}<span class="empty">:::::::::::::::</span></td></tr>
+        </table>
       </div>
 
       <div class="droite part"id="exterieur">
-        <h4>Exterieur</h4>
-        <p class="gauche-droite"><span class="gauche">Temperature: 10,10°C</span><span class="droite data">{l:10,3,11,2,2,2,3,4,8}</span></p>
-        <p class="gauche-droite"><span class="gauche">Humidite: 40%</span><span class="droite data">{l:100,0,100,0,50,100,0,50,0,50,100}</span></p>
+        <table>
+          <tr><td><h4>Exterieur</h4></td></tr>
+          <tr><td>Temperature:</td><td><span class="data selectable">10,10°C</span></td><td class="indicators"><img src="./icons/too-cold.svg" alt="Temperature" width="24" height="24"></td><td class="data">{l:10,3,11,2,5,2,3,4,8,30,20,10,5,10,15}<span class="empty">:::::::::::::::</span></td></tr>
+          <tr><td>Humidite:</td><td><span class="data selectable">40%</span></td><td class="indicators"><img src="./icons/humidity-low.svg" alt="Humidite" width="24" height="24"></td><td class="data">{l:100,0,100,0,50,100,0,50,0,62,50,40,60,75,60}<span class="empty">:::::::::::::::</span></td></tr>
+        </table>
       </div>
 
     </div>

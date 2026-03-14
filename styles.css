@@ -70,7 +70,10 @@ h1{
 
 #groupe-projet{
     text-align: center;
-    margin-top: 20px;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 5px;
+    background-color: #1e1f20;
 }
 
 .gauche{
@@ -91,8 +94,13 @@ h1{
 body {
     background-color: #131314;
     color: #c4c7c5;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding:0;
+    margin:0;
+}
+
+#frame{
+    padding: 0;
+    margin: 5px;
 }
 
 .empty{
@@ -100,11 +108,18 @@ body {
 }
 
 td{
-    padding: 10px;
+    padding: 15px;
 }
 
 table{
     border-collapse: collapse;
     margin: auto;
     margin-top: 50px;
+}
+
+#panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

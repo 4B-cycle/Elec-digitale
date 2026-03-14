@@ -21,15 +21,18 @@
 
   <body>
     <h4 id="groupe-projet">Projet Elec-digitale - Groupe 9</h4>
+    <div id="frame">
 
     <div id="panel">
-      <img class="btn" width="48" height="48" src="./icons/reset-history.svg" alt="Effacer l'historique" style="cursor: pointer;" onclick="ResetHistory()">
-      <img class="btn" width="48" height="48" src="./icons/database.svg" alt="Acceder a la base de donnee" style="cursor: pointer;" onclick="AffDB()">
-      <img class="btn" width="48" height="48" src="./icons/bar-chart.svg" alt="Bar Chart Style" style="cursor: pointer;" onclick="GraphStyle(1)">
-      <img class="btn" width="48" height="48" src="./icons/PCB-view.svg" alt="Voir le PCB" style="cursor: pointer;" onclick="AffPCB()">
-      <img class="btn" width="48" height="48" src="./icons/led-test.svg" alt="Tester les LEDs" style="cursor: pointer;" onclick="TestLEDs()">
+      <img class="left" width="38.4" height="38.4" src="./icons/no-wifi.svg" alt="WiFi Etat" style="margin:8.4px;">
+      <div id="btns" class="right">
+        <img class="btn" width="48" height="48" src="./icons/reset-history.svg" alt="Effacer l'historique" style="cursor: pointer; margin-left:auto;" onclick="ResetHistory()">
+        <img class="btn" width="48" height="48" src="./icons/database.svg" alt="Acceder a la base de donnee" style="cursor: pointer;" onclick="AffDB()">
+        <img class="btn" width="48" height="48" src="./icons/bar-chart.svg" alt="Bar Chart Style" style="cursor: pointer;" onclick="GraphStyle(1)">
+        <img class="btn" width="48" height="48" src="./icons/PCB-view.svg" alt="Voir le PCB" style="cursor: pointer;" onclick="AffPCB()">
+        <img class="btn" width="48" height="48" src="./icons/led-test.svg" alt="Tester les LEDs" style="cursor: pointer;" onclick="TestLEDs()">
+      </div>
     </div>
-
     <div id="info">
 
       <div class="droite part"id="interieur">
@@ -49,5 +52,6 @@
       </div>
 
     </div>
+  </div>
   </body>
 </html>

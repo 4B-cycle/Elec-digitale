@@ -1,6 +1,6 @@
 /*body{background-color:red;}test de connectivite css a html✅*/
 
-p{
+p, .texte, .t{
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -22,8 +22,20 @@ h1{
 }
 
 ul{
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li{
     padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+.horisontal {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
 }
 
 .data{
@@ -42,7 +54,7 @@ ul{
     -ms-user-select: none;
   }
 
-.selectable{
+.selectable, .s{
     user-select: text !important;
     -webkit-user-select: text !important;
     -moz-user-select: text !important;
@@ -70,28 +82,28 @@ ul{
 }
 
 .btn{
-    margin: 5px;
+    margin: 8px;
 }
 
 #groupe-projet{
     text-align: center;
     padding: 10px;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     background-color: #1e1f20;
 }
 
-.gauche{
+.gauche, .g{
     display: inline-block;
     align-items: left;
 }
 
-.droite{
+.droite, .d{
     display: inline-block;
     align-items: right;
 }
 
-.centre{
+.centre, .c{
     margin-left: auto;
     margin-right: auto;
 }
@@ -105,7 +117,7 @@ body {
 
 #frame{
     padding: 0;
-    margin: 5px;
+    margin: 8px;
 }
 
 .empty{
@@ -113,7 +125,7 @@ body {
 }
 
 td{
-    padding: 15px;
+    padding: 16px;
 }
 
 table{

@@ -15,18 +15,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Datatype:wdth,wght@50..150,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
   </head>
+
+
+
 
 
   <body onload="Start()">
     <h4 id="groupe-projet">Projet Elec-digitale - Groupe 9</h4>
     <div id="frame">
 
+
+
     <div id="panel">
-      <img class="left" width="38.4" height="38.4" src="./icons/no-wifi.svg" alt="WiFi Etat" style="margin:8.4px;">
+      <img class="left" width="38.4" height="38.4" src="./icons/no-wifi.svg" alt="WiFi Etat" style="margin:12.8px;">
       <div id="btns" class="right">
-        <ul id="btns" class="right">
+        <ul id="btns" class="right horisontal h">
           <li><img class="btn" width="48" height="48" src="./icons/reset-history.svg" alt="Effacer l'historique" style="cursor: pointer; margin-left:auto;" onclick="ResetHistory()"></li>
           <li><img class="btn" width="48" height="48" src="./icons/database.svg" alt="Acceder a la base de donnee" style="cursor: pointer;" onclick="AffDB()"></li>
           <li><img class="btn" width="48" height="48" src="./icons/bar-chart.svg" alt="Bar Chart Style" style="cursor: pointer;" onclick="GraphStyle(1)"></li>
@@ -39,7 +43,7 @@
     <div id="info">
       <div class="droite part"id="interieur">
         <h4>Interieur</h4>
-        <ul>
+        <ul class="horisontal h">
           <li><table>
             <tr><td>Temperature:</td><td><span class="data selectable temperature interieur">15,55°C</span></td><td class="indicators"><img src="./icons/too-hot.svg" alt="Temperature" width="24" height="24"></td></tr>
             <tr><td>Humidite:</td><td><span class="data selectable humidite interieur">60%</span></td><td class="indicators"><img src="./icons/humidity-high.svg" alt="Humidite" width="24" height="24"></td></tr>
@@ -53,7 +57,7 @@
 
       <div class="droite part"id="exterieur">
         <h4>Exterieur</h4>
-        <ul>
+        <ul class="horisontal h">
           <li><table>
             <tr><td>Temperature:</td><td><span class="data selectable temperature exterieur">10,10°C</span></td><td class="indicators"><img src="./icons/too-cold.svg" alt="Temperature" width="24" height="24"></td></tr>
             <tr><td>Humidite:</td><td><span class="data selectable humidite exterieur">40%</span></td><td class="indicators"><img src="./icons/humidity-low.svg" alt="Humidite" width="24" height="24"></td></tr>

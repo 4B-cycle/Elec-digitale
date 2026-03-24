@@ -1,38 +1,38 @@
-/*alert("test de connectivite js a html");✅*/
-let data=["{l:}<span class=empty>:::::::::::::::::::::::::</span>",
-          "{l:}<span class=empty>:::::::::::::::::::::::::</span>",
-          "{l:}<span class=empty>:::::::::::::::::::::::::</span>",
-          "{l:}<span class=empty>:::::::::::::::::::::::::</span>"];
-
-let vitesse=1;
-
-function WriteData(a, b, c, d) {
-    data[0] = data[0].replace("}", a+",}");data[0] = data[0].replace(":<", "<");
-    data[1] = data[1].replace("}", b+",}");data[1] = data[1].replace(":<", "<");
-    data[2] = data[2].replace("}", c+",}");data[2] = data[2].replace(":<", "<");
-    data[3] = data[3].replace("}", d+",}");data[3] = data[3].replace(":<", "<");
-    /*for (let datum of data) {
-            datum=datum.replace(":<", "<");
-}*/
-
+function range(x) {/*svp n'enlevez pas ca, c'est un alternative de "for i in range(...)" de python*/
+    let recol = [];
+    for (let i = 0; i < x; i++) {
+        recol.push(i);
+    }
+    return recol;
 }
 
+function input(){/*c'est un version de prompt modifiee*/
+};prompt=input;/*pour que on puisse utiliser input() comme prompt()*/
+
+const videData="{l:}<span class=empty>:::::::::::::::::::::::::</span>";
+const inputFrame=  `<div class="input-frame overlay">
+                        <div class="input-popup">
+                            <input type="number" min="0.1" max="100" step="0.1" class="input-row" placeholder="Entre 0,1 et 100" value="10">
+                            <button class="input-btn">OK</button>
+                        </div>
+                    </div>`
+
+let dataTexte=[videData, videData, videData, videData];
+let dataValeur=[[], [], [], []];
+let vitesse=1;
+
 function UpdateData() {
-    document.querySelectorAll(".data.compact").forEach((el, i) => {
-        el.innerHTML = data[i];
-    });
 }
 
 function Start() {
-    UpdateData()
+    for (let i in range(4)) {
+        console.log("test"+i);
+    }
     setInterval(UpdateData, 1000/vitesse);
 }
 
 function ResetHistory() {/*cet fonction sert a effacer des graphes et changer la vitesse de mise a jour*/
-    data=["{l:}<span class=empty>:::::::::::::::::::::::::</span>",
-          "{l:}<span class=empty>:::::::::::::::::::::::::</span>",
-          "{l:}<span class=empty>:::::::::::::::::::::::::</span>",
-          "{l:}<span class=empty>:::::::::::::::::::::::::</span>"];
+    data = [videData, videData, videData, videData];
     document.querySelectorAll(".data.compact").forEach((el, i) => {
         el.innerHTML = data[i];
     });

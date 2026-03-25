@@ -26,15 +26,13 @@
     <div id="frame">
 
     <div id="panel">
-      <div id="etat-wifi">
-        <img class="left" width="38.4" height="38.4" src="./icons/no-wifi.svg" alt="No Wi-Fi" style="margin:12.8px;">
-      </div>
+      <img class="left" id="etat-wifi" width="38.4" height="38.4" src="./icons/no-wifi.svg" alt="No Wi-Fi" style="margin:12.8px;">
       <div id="btns" class="right">
         <ul id="btns" class="right horisontal h">
           <li><img class="btn" width="48" height="48" src="./icons/reset-history.svg" alt="Effacer l'historique" style="cursor: pointer; margin-left:auto;" onclick="ResetHistory()"></li>
-          <li><img class="btn" width="48" height="48" src="./icons/database.svg" alt="Acceder a la base de donnee" style="cursor: pointer;" onclick="AffDB()"></li>
+          <!--<li><img class="btn" width="48" height="48" src="./icons/database.svg" alt="Acceder a la base de donnee" style="cursor: pointer;" onclick="AffDB()"></li>-->
           <li><img class="btn" width="48" height="48" src="./icons/bar-chart.svg" alt="Bar Chart Style" style="cursor: pointer;" onclick="GraphStyle(1)"></li>
-          <li><img class="btn" width="48" height="48" src="./icons/PCB-view.svg" alt="Voir le PCB" style="cursor: pointer;" onclick="AffPCB()"></li>
+          <!--<li><img class="btn" width="48" height="48" src="./icons/PCB-view.svg" alt="Voir le PCB" style="cursor: pointer;" onclick="AffPCB()"></li>-->
           <li><img class="btn" width="48" height="48" src="./icons/led-test.svg" alt="Tester les LEDs" style="cursor: pointer;" onclick="TestLEDs()"></li>
         </ul>
       </div>
@@ -45,12 +43,12 @@
         <h4>Interieur</h4>
         <ul class="horisontal">
           <li><table>
-            <tr><td><span class="texte">Temperature:</span></td><td><span class="data selectable temperature interieur">15,55°C</span></td><td class="indicators"><img src="./icons/too-hot.svg" alt="Temperature" width="24" height="24"></td></tr>
-            <tr><td><span class="texte">Humidite:</span></td><td><span class="data selectable humidite interieur">60%</span></td><td class="indicators"><img src="./icons/humidity-high.svg" alt="Humidite" width="24" height="24"></td></tr>
+            <tr height="96"><td><span class="texte">Temperature:</span></td><td><span class="data selectable temperature interieur">15,55°C</span></td><td class="indicators"><img src="./icons/too-hot.svg" alt="Temperature" width="24" height="24"></td></tr>
+            <tr height="96"><td><span class="texte">Humidite:</span></td><td><span class="data selectable humidite interieur">60%</span></td><td class="indicators"><img src="./icons/humidity-high.svg" alt="Humidite" width="24" height="24"></td></tr>
           </table></li>
           <li><table>
-            <tr><td class="data compact">{l:10,20,15,30,35,40,20,25,50,80,30,20,10,15,5}<span class="empty">::::::::::</span></td></tr>
-            <tr><td class="data compact">{l:50,70,71,60,70,56,81,100,20,3,10,5,23,20,10}<span class="empty">::::::::::</span></td></tr>
+            <tr height="96"><td class="data compact">{l:10,20,15,30,35,40,20,25,50,80,30,20,10,15,5}<span class="empty">::::::::::</span></td></tr>
+            <tr height="96"><td class="data compact">{l:50,70,71,60,70,56,81,100,20,3,10,5,23,20,10}<span class="empty">::::::::::</span></td></tr>
           </table></li>
         </ul>
       </div>
@@ -59,12 +57,12 @@
         <h4>Exterieur</h4>
         <ul class="horisontal">
           <li><table>
-            <tr><td><span class="texte">Temperature:</span></td><td><span class="data selectable temperature exterieur">10,10°C</span></td><td class="indicators"><img src="./icons/too-cold.svg" alt="Temperature" width="24" height="24"></td></tr>
-            <tr><td><span class="texte">Humidite:</span></td><td><span class="data selectable humidite exterieur">40%</span></td><td class="indicators"><img src="./icons/humidity-low.svg" alt="Humidite" width="24" height="24"></td></tr>
+            <tr height="96"><td><span class="texte">Temperature:</span></td><td><span class="data selectable temperature exterieur">10,10°C</span></td><td class="indicators"><img src="./icons/too-cold.svg" alt="Temperature" width="24" height="24"></td></tr>
+            <tr height="96"><td><span class="texte">Humidite:</span></td><td><span class="data selectable humidite exterieur">40%</span></td><td class="indicators"><img src="./icons/humidity-low.svg" alt="Humidite" width="24" height="24"></td></tr>
           </table></li>
           <li><table>
-            <tr><td class="data compact">{l:10,20,15,30,35,40,20,25,50,80,30,20,10,15,5}<span class="empty">::::::::::</span></td></tr>
-            <tr><td class="data compact">{l:50,70,71,60,70,56,81,100,20,3,10,5,23,20,10}<span class="empty">::::::::::</span></td></tr>
+            <tr height="96"><td class="data compact">{l:10,20,15,30,35,40,20,25,50,80,30,20,10,15,5}<span class="empty">::::::::::</span></td></tr>
+            <tr height="96"><td class="data compact">{l:50,70,71,60,70,56,81,100,20,3,10,5,23,20,10}<span class="empty">::::::::::</span></td></tr>
           </table></li>
         </ul>
       </div>

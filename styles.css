@@ -43,8 +43,8 @@ li{
   font-optical-sizing: auto !important;
   font-weight: 400 !important;
   font-style: normal !important;
-  font-variation-settings: "wdth" 112 !important;
-  height:5em;
+  font-variation-settings: "wdth" 112;
+  height: 5em;
 }
 
 *{
@@ -76,10 +76,10 @@ li{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 600px;
-    height: 400px;
+    max-width: 600px;
+    min-width: 300px;
     margin: 8px;
-    padding: 8px;
+    padding: 32px;
 }
 
 .btn{
@@ -89,7 +89,7 @@ li{
 
 #groupe-projet{
     text-align: center;
-    padding: 10px;
+    padding: 16px;
     margin: 0;
     margin-bottom: 8px;
     background-color: #1e1f20;
@@ -113,7 +113,7 @@ li{
 .overlay, .o{
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(27, 27, 27, 0.5);
   z-index: 220;
   display: flex;
   align-items: center;
@@ -137,13 +137,15 @@ body {
 }
 
 td{
-    padding: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 table{
     border-collapse: collapse;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #panel{

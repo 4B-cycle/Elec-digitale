@@ -108,6 +108,7 @@ li{
 .centre, .c{
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .overlay, .o{
@@ -120,7 +121,7 @@ li{
   justify-content: center;
 }
 
-body {
+body{
     background-color: #131314;
     color: #c4c7c5;
     padding:0;
@@ -144,8 +145,8 @@ td{
 table{
     border-collapse: collapse;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 28px;
+    margin-bottom: 32px;
 }
 
 #panel{

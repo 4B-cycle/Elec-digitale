@@ -1,6 +1,7 @@
-function range(x) {/*svp n'enlevez pas ca, c'est un alternative de "for i in range(...)" de python*/
+function range(x, y=undefined, z=1) {/*svp n'enlevez pas ca, c'est un alternative de "for i in range(...)" de python*/
+    if (y==undefined) {y = 0} else {let recol = x; x = y; y = recol;}
     let recol = [];
-    for (let i = 0; i < x; i++) {
+    for (let i = y; i < x; i += z) {
         recol.push(i);
     }
     return recol;

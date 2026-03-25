@@ -7,19 +7,28 @@ function range(x) {/*svp n'enlevez pas ca, c'est un alternative de "for i in ran
 }
 
 function input(){/*c'est un version de prompt modifiee*/
-};prompt=input;/*pour que on puisse utiliser input() comme prompt()*/
+    document.querySelectorAll(".overlay").forEach(x => x.remove());
+    document.body.innerHTML+=inputFrame;
+    return String(promptEntity);
+};prompt=input;/*pour que on puisse utiliser prompt() comme input()*/
+
+function ConfirmPrompt(){
+    promptEntity=document.querySelector(".input-row").value
+    document.querySelectorAll(".overlay").forEach(x => x.remove());
+};
 
 const videData="{l:}<span class=empty>:::::::::::::::::::::::::</span>";
 const inputFrame=  `<div class="input-frame overlay">
-                        <div class="input-popup">
+                        <div class="input-popup centre">
                             <input type="number" min="0.1" max="100" step="0.1" class="input-row" placeholder="Entre 0,1 et 100" value="10">
-                            <button class="input-btn">OK</button>
+                            <img src="./icons/OK.svg" width="32" height="32" alt="OK" class="input-btn" onclick="ConfirmPrompt()">
                         </div>
                     </div>`
 
 let dataTexte=[videData, videData, videData, videData];
 let dataValeur=[[], [], [], []];
-let vitesse=1;
+let vitesse=10;
+let promptEntity;
 
 function UpdateData() {
 }

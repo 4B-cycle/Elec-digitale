@@ -109,6 +109,16 @@ li{
     margin-right: auto;
 }
 
+.overlay, .o{
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 220;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
     background-color: #131314;
     color: #c4c7c5;

@@ -18,12 +18,11 @@ function ConfirmPrompt(){
 };
 
 const videData="{l:}<span class=empty>:::::::::::::::::::::::::</span>";
-const inputFrame=  `<div class="input-frame overlay">
-                        <div class="input-popup centre">
-                            <input type="number" min="0.1" max="100" step="0.1" class="input-row" placeholder="Entre 0,1 et 100" value="10">
-                            <img src="./icons/OK.svg" width="32" height="32" alt="OK" class="input-btn" onclick="ConfirmPrompt()">
-                        </div>
-                    </div>`
+const inputFrame=  `<div class="input-frame overlay obg" onclick="document.querySelectorAll('.overlay').forEach(x => x.remove())">
+                    <div class="input-popup centre" onclick="event.stopPropagation()">
+                        <input type="number" min="0.1" max="100" step="0.1" class="input-row" placeholder="Entre 0,1 et 100" value="10">
+                        <img src="./icons/OK.svg" width="32" height="32" alt="OK" class="input-btn btn" onclick="ConfirmPrompt()">
+                    </div></div>`;
 
 let dataTexte=[videData, videData, videData, videData];
 let dataValeur=[[], [], [], []];

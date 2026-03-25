@@ -84,6 +84,7 @@ li{
 
 .btn{
     margin: 8px;
+    cursor: pointer;
 }
 
 #groupe-projet{

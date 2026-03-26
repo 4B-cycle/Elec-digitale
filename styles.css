@@ -21,7 +21,7 @@ h1{
   font-style: normal;
 }
 
-ul{
+ul, ol{
   padding: 0;
   margin: 0;
   list-style: none;
@@ -83,7 +83,7 @@ li{
     align-items: center;
     max-width: 800px;
     width: calc(100% - 16px - 16px - 48px);
-    min-width: 300px;
+    min-width: 200px;
     margin: 8px;
     padding: 8px;
     padding-bottom: 40px;

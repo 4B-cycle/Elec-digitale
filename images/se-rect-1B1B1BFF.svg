@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="96"
+   height="96"
+   viewBox="0 0 96 96"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1" /><path
+     id="path5"
+     style="fill:#1b1b1b;fill-opacity:1;stroke-width:0.894427"
+     d="m 24,95.666012 c -4.333285,0 -8.666673,-0.33333 -12,-1 C 5.3333474,93.332682 2.6673154,90.666762 1.3339844,84 0.66731937,80.66662 0.33398138,76.333288 0.33398438,72 H 24 Z" /><path
+     id="rect4-0"
+     style="fill:#1b1b1b;fill-opacity:1;stroke-width:0.894427"
+     d="m 72,95.666012 c 4.333285,0 8.666673,-0.33333 12,-1 6.666653,-1.33333 9.332685,-3.99925 10.666016,-10.666012 0.666665,-3.33338 1.000003,-7.666712 1,-12 H 72 Z" /><path
+     id="rect4"
+     style="fill:#1b1b1b;fill-opacity:1;stroke-width:0.894427"
+     d="m 24,0.33398438 c -4.333285,0 -8.666673,0.3333346 -12,1.00000002 C 5.3333467,2.6673149 2.6673149,5.3332397 1.3339844,12 0.66731898,15.33338 0.33398105,19.666712 0.33398438,24 H 24 Z" /><path
+     id="path4"
+     style="fill:#1b1b1b;fill-opacity:1;stroke-width:0.894427"
+     d="m 72,0.33398438 c 4.333285,0 8.666673,0.3333346 12,1.00000002 C 90.666654,2.6673149 93.332685,5.3332397 94.666016,12 c 0.666665,3.33338 1.000003,7.666712 1,12 H 72 Z" /><path
+     id="rect2"
+     style="fill:#1b1b1b;fill-opacity:1;stroke-width:0.573325"
+     d="m 23,72 1,23.666016 H 72 L 73,72 Z" /><path
+     id="rect6"
+     style="fill:#1b1b1b;fill-opacity:1;stroke-width:0.573325"
+     d="M 24,0.33398438 23,24 H 73 L 72,0.33398438 Z" /><path
+     id="rect7"
+     style="fill:#1b1b1b;fill-opacity:1;stroke-width:0.573318"
+     d="M 24,-0.33398438 H 72 L 73,-24 H 23 Z"
+     transform="rotate(90)" /><path
+     id="rect1"
+     style="fill:#1b1b1b;fill-opacity:1;stroke-width:0.573325"
+     d="M 23,-72 H 73 L 72,-95.666016 H 24 Z"
+     transform="rotate(90)" /><rect
+     style="fill:#1b1b1b;fill-opacity:1;stroke-width:1.42887"
+     id="rect3"
+     width="84"
+     height="84"
+     x="6"
+     y="6" /></svg>

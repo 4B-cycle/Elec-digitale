@@ -82,7 +82,7 @@ li{
     justify-content: space-around;
     align-items: center;
     max-width: 800px;
-    width: calc(100% - 16px - 16px - 48px);
+    width: calc(100% - 16px);
     min-width: 200px;
     margin: 8px;
     padding: 8px;
